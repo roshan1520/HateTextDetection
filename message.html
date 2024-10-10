@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="./css/message.css">
+    <title>Messages - MySocial</title>
+</head>
+<body>
+     <header>
+        <div class="logo">MySocial</div>
+        <nav>
+            <input type="text" placeholder="Search...">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="message.html">Messages</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="messages">
+            <h2>Messages</h2>
+
+            <div id="messagesContainer" class="messages-container">
+                <div class="message">
+                    <div class="message-header">
+                        <strong>Jane Doe</strong>
+                        <span>10:15 AM</span>
+                    </div>
+                    <p>Hello! How are you?</p>
+                </div>
+                <div class="message">
+                    <div class="message-header">
+                        <strong>John Smith</strong>
+                        <span>9:45 AM</span>
+                    </div>
+                    <p>Are we still on for lunch?</p>
+                </div>
+                <div class="message">
+                    <div class="message-header">
+                        <strong>Emily Johnson</strong>
+                        <span>Yesterday</span>
+                    </div>
+                    <p>Don’t forget the meeting tomorrow!</p>
+                </div>
+            </div>
+
+            <div class="new-message">
+                <textarea id="newMessageContent" placeholder="Type your message..." rows="3"></textarea>
+                <button id="sendMessageButton">Send</button>
+                <p id="messageStatus" style="display: none;"></p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MySocial. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/message.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Profile - MySocial</title>
+</head>
+<body>
+    <header>
+        <div class="logo">MySocial</div>
+        <nav>
+            <input type="text" placeholder="Search...">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="message.html">Messages</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="profile">
+            <h2>Profile</h2>
+            <div class="profile-header">
+                <img id="profilePicture" src="https://randomuser.me/api/portraits/men/41.jpg" alt="Profile Picture">
+                <div class="profile-info">
+                    <h3 id="userName">Hate Text Detection</h3>
+                    <p id="userEmail">hatetext@example.com</p><br>
+                    <p id="userBio">In an era where online communication is pervasive, hate speech has emerged as a critical societal issue, with harmful effects on individuals and communities. Automated hate detection systems, using by artificial intelligence (AI) and natural language processing (NLP), aim to identify and mitigate the spread of such harmful content. However, the deployment of these systems comes with significant implications. This project explores the technological, ethical, and social consequences of automated hate detection. While these systems offer the potential to curb hate speech and promote safer digital spaces, they raise concerns about algorithmic biases, censorship, and the balance between free expression and content moderation. The effectiveness and fairness of hate detection tools, as well as their impact on marginalized groups, remain key areas of concern. This study aims to provide a comprehensive understanding of the implications surrounding hate detection technologies and proposes guidelines for their responsible and equitable use.</p>
+                </div>
+            </div>
+
+            <h3>Edit Profile</h3>
+            <form id="editProfileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" placeholder="Tell something about yourself..." rows="3" required></textarea>
+
+                <button type="submit">Update Profile</button>
+                <p id="updateStatus" style="display: none;"></p>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MySocial. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>

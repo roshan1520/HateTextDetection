@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <title>Social Media Page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">MySocial</div>
+        <nav>
+            <input type="text" placeholder="Search...">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="message.html">Messages</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Friend Suggestions</h2>
+            <div class="friend">
+                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Friend 1">
+                <div>
+                    <p>Jane Doe</p>
+                    <button>Add Friend</button>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Friend 2">
+                <div>
+                    <p>John Smith</p>
+                    <button>Add Friend</button>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Friend 3">
+                <div>
+                    <p>Emily Johnson</p>
+                    <button>Add Friend</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="feed">
+            <div class="post-form">
+                <textarea id="postContent" placeholder="What's on your mind?" rows="3"></textarea>
+                <button id="postButton">Post</button>
+            </div>
+
+            <div id="postsContainer"></div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MySocial. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
