@@ -1,0 +1,58 @@
+.messages {
+    flex: 3;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.messages-container {
+    max-height: 400px; /* Limit height to allow scrolling */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.message:last-child {
+    border-bottom: none; /* Remove border for last message */
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-message {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: none; /* Prevent resizing of the textarea */
+}
+
+button {
+    background-color: #1877f2; /* Consistent blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #155eaa; /* Darker blue on hover */
+}
+
+#messageStatus {
+    margin-top: 10px;
+    color: #28a745; /* Green for status message */
+}
